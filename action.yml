@@ -1,0 +1,11 @@
+name: 'Helm 3 Action'
+description: 'Deploy a helm chart using GitHub actions'
+inputs:
+  command:  # id of input
+    description: helm command
+    required: true
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.command }}
