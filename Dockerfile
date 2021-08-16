@@ -1,4 +1,4 @@
-FROM alpine:3.10.3
+FROM public.ecr.aws/micahhausler/alpine:3.14.0
 
 ENV HELM_3_FILE="helm-v3.5.3-linux-amd64.tar.gz"
 ENV KUBECTL_VERSION="v1.19.0"
