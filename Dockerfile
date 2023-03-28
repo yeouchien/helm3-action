@@ -1,7 +1,7 @@
 FROM public.ecr.aws/micahhausler/alpine:3.14.0
 
 ENV HELM_3_FILE="helm-v3.7.1-linux-amd64.tar.gz"
-ENV KUBECTL_VERSION="v1.19.0"
+ENV KUBECTL_VERSION="v1.25.0"
 ENV AWS_IAM_AUTHENTICATOR_VERSION="v0.6.2"
 
 RUN apk add --no-cache ca-certificates jq curl bash nodejs
